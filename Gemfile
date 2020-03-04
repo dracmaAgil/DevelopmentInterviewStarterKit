@@ -20,12 +20,21 @@ gem 'omniauth'
 gem 'foreman'
 gem 'rake'
 gem 'dotenv-rails'
+gem 'figaro'
+gem 'httparty'
+gem 'haml-rails'
+gem 'webmock'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
   gem 'pry-rails'
+  gem 'rspec-rails'
+  gem 'factory_bot_rails'
+  gem 'shoulda-matchers'
+  gem 'faker'
+  gem 'database_cleaner'
 end
 
 group :development do

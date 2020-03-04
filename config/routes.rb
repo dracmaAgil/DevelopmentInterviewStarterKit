@@ -6,4 +6,11 @@ Rails.application.routes.draw do
   end
 
   root to: "main#index"
+
+  resources :people do
+    collection do
+      get 'people_list'
+    end
+  end
+
 end

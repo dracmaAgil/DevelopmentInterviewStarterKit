@@ -1,0 +1,19 @@
+%div
+  %center
+    -if @people.present?
+      %table
+        %tr
+          %th
+            Full Name
+          %th
+            Email Address
+          %th
+            Job Title
+        = @people.each do |person|
+          %tr
+            %td
+              = person['display_name']
+            %td
+              = person['email_address'] || 'Without email address'
+            %td
+              = person['title'] || 'Without job senority'
